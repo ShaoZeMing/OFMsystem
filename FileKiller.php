@@ -67,12 +67,12 @@ function bytesize_calc($f_path){
 	}
 	return $bytesize;
 }
-//获得文件大小
+//获取文件大小
 function f_size($f_path){
 	return size_formate(bytesize_calc($f_path));
 }
 $title=<<<EOF
-<div class='title'>文件探测器(FileScanner)&nbsp;v2.8&nbsp;作者:Ming</div>
+<div class='title'>文件探测器(FileScanner)&nbsp;v1.2&nbsp;作者:Ming</div>
 EOF;
 $fn='f28.php';//外部文件名
 function uploadfile($curdir){
@@ -370,18 +370,6 @@ $otherinfo = <<<EOF
 </table><br/>
 <span style="font-size:14px">以下为更改历史</span><br/>
 <table style="font-size:14px" width="100%">
-<tr><td>FileScanner2.8 增加类似百度谷歌等搜索提示功能</td></tr>
-<tr><td>FileScanner2.7 增加文件搜索查询结果的操作(如预览,编辑等)采用ajax实现,后台数据的返回采用json封装</td></tr>
-<tr><td>FileScanner2.6 增加文件搜索普通查询如搜mp3,将会对查询结果关键字高亮显示</td></tr>
-<tr><td>FileScanner2.5 搜索框输入关键字后回车即可搜索</td></tr>
-<tr><td>FileScanner2.4 增加文件搜索功能,支持*查询,如*.avi</td></tr>
-<tr><td>FileScanner2.3 在其他信息中增加session信息</td></tr>
-<tr><td>FileScanner2.2 调整部分div+css效果,标题挪到右边显示</td></tr>
-<tr><td>FileScanner2.1 增加高亮显示表行js效果及显示目录大小通过ajax实现</td></tr>
-<tr><td>FileScanner2.0 增加新建,显示系统信息,界面稍微美化即其它细节问题,改动比较多,升级为2.0</td></tr>
-<tr><td>FileScanner1.3 增加上传功能</td></tr>
-<tr><td>FileScanner1.2 解决相应操作后应返回当前目录及双斜线显示问题</td></tr>
-<tr><td>FileScanner1.1 解决不能文件下载的问题,header函数前不能有输出语句</td></tr>
 <tr><td>FileScanner1.0 基本功能的实现,面向过程模式编写,有时间在考虑对象重构</td></tr>
 </table>
 EOF;
